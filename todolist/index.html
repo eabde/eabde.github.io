@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Todo List</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/script.js"></script>
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+        <h1>Todo List +</h1>
+
+        <div id="container">
+        <div >
+            <form id = "todoForm">
+                <input type="text" id="descrizione" placeholder="Add New Todo">
+                <input type="date" id="scadenza" >
+                <button type="button" id="aggiungi" onclick="aggiungiTodo()">Add</button>
+                <button type="button" id="elimina" onclick="eliminaTutto()">Elimina tutto</button>
+            </form>
+            <div id="filtri">
+                <label><input type="checkbox" id="urgenti" onchange="mostraUrgenti()">Mostra attività urgenti</label>
+                <label><input type="checkbox" id="ordina" onchange="ordinaScadenza()">Ordina per scadenza</label>
+            </div>
+        
+        </div>
+        <div id="todoList"></div>
+        </div>
+    </body>
+</html>
