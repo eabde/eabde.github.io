@@ -1,13 +1,16 @@
 class CCella{
-    constructor(){
-        this.colonna = 0;
-        this.riga = 0;
+    constructor(x,y){
+        this.colonna = y;
+        this.riga = x;
         this.isBomba = false; 
     }
 
+    scopriCella(){
+        $('.cella[data-row=' + this.riga + '][data-col=' + this.colonna + ']').css('background-color', "white");
+    }
 
-
-
-
-
+    
+    
+    
+    
 }
