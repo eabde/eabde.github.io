@@ -5,10 +5,9 @@ h1{
     font-size: 300%;
     font-style: oblique;
 }
-
 #campo {
-	width: 500px;
-	height: 500px;
+    display: inline-block;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     border: 5px  solid black ;
@@ -23,4 +22,7 @@ h1{
 }
 .cella:hover {
 	background-color: #919191;
+}
+#gCampo,#nMine,#testo{
+    font-size: 25px;
 }
